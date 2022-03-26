@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="I[=edge"]>
+        <meta name="viewport" content="width, init">
+        <title>Document</title>
+        <style>
+            .inner{
+                background-color: green;
+                padding: 50px;
+            }
+            selected{
+                font-size: 1.1em;
+                color: red;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+        Mock form
+        <p id="paragraphA">Hello<span id="name">Birtis</span>how are you today</p>
+        <div class ='mydivtype'>This is a mydivtype </div>
+        <div class ='mydivtype'>This is another mydivtype div</div>
+        <div>
+        <p>This is another paragraph</p>
+        </div>
+        
+        <!--<ul id="traverslist">-->
+            <ul>
+        <li class ='first'>Item 1</li>
+        <li class = 'selected'>Item 2</li>
+        <li class = 'last'>Item 3</li>
+    </ul>
+    </header>
+    <div id="toplevel">
+        <html>
+	<body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+        <div>
+            <a href="'0">click me</a>
+        </div>
+		<header>
+			<ul>
+				<li class="first">Item 1</li>
+				<li class="selected">Item 2</li>
+				<li class="last">Item 3</li>
+			</ul>
+		</header>
+<section>
+    hello!
+</section>
+<script>
+    //document is a javascipt object.
+    //Node Object
+
+    //Object Orientation Programming
+    //Encapsulate data with the methods you would use to manipulate that data in objects.
+    let eventhandler = function(event){
+        //event.target always holds  the specific element that was clicked on/targeted.
+        let slideshow ={
+            pictures:["kittens", "dogs", "alligator"],
+            currentPictureIndex: 0,
+
+            getCurrentPhoto: function(){
+                return this.pictures();
+            }
+        }
+        
+        console.log(event.target, event.currentTarget)}
+        let eventHandler2 = function(event){
+            console.log("inner event handler");
+            event.stopPropagation();
+
+        };
+    
+        event.target.innerHTML="mouse has been over me";
+        element.innerHTML= ("mouse has been over me.");
+
+        alert(event.target);
+    
+    let innerDiv = document.queryselector(".inner");
+    let outerDiv = document.queryselector(".outer");
+    outerDiv.addEventlistener('click', eventhandler);
+
+    let element2 = document.querySelector(".second");
+    let element1 = document.querySelector(".first");
+
+    element1 .addEventListener('mouseover', eventHandler);
+    element2 .addEventListener('mouseover', eventHandler);
+
+    let element = document.querySelector('.second');
+    element.addEventlistener('click', function(event){
+        alet('.clicked');
+    });
+    element.addEventListener('mouseover', function(event){
+        element.innerHTML("mouse over text");
+    });
+
+    element.addEventListener('mouseout', function(event){
+        element.innerHTML("item 2");
+    let newLi = document.createElement('li');
+    newLi.classnmae="fourth";
+    newLi.innerHTML = "Item 4";
+    let innerParagraph = document.createElement('p');
+    newLi.appendChild(innerParagraph);
+
+    let list = document.queryselector('ul');
+    list.appendChid(newLi);
+
+    innerParagraph.style.margin=0;//add element
+    //We can use .emove () to remove an item from the element.
+    let element = document.queryselector(".first");
+    element.remove();
+
+    //we can select eleemnts, and modify their properties
+</script>
+
+		<div class="col">
+			<section>
+				<h2>Section 1</h2>
+			</section>
+			<section class="current">
+				<h2 class="highlight">Section 2</h2>
+			</section>
+			<section>
+				<h1>Section 2</h1>
+			</section>
+		</div>
+	</body>
+</html>
+        <p>Test</p>
+        </div>
+            <div>Test<div>
+
+        </div>
+        <div id="'example">This is <span>some</span></div>
+        let a = document.queryselector ('a');
+        alert(a.href);
+        alert(a.name);
+        <a href="http://google.com" name="googleLink">click me</a>
+    <script>
+        let selectedItem =document.querySelector(".selected");
+        selectedItem.className="";
+        let newselectedItem = selectedItem.nextElementSibling;
+        newSelectedItem.className="selected";
+
+
+        let a = document.querySelector('a');
+        let headerElement =docuemet.querySelector("header");
+        let sectionElements=document.querySelectorAll("section");
+        let currentSection=document.getElementsByClassName("section.current");
+        let section3=document.getElementsBytag("section")[2];
+        let section3=document.querySelector("section.current").nextElementSibling;
+        let section3=document.queryselector("div.col").children[2];
+        //get the h2 node from the section before the current selection
+        let div = document.querySelector("h2.highlight").parentElement.parentElement;
+        
+        let div2 = document.queryselector("example");
+
+        let div = document.querySelector('div');
+        let a = document.queryselector('a');
+        alert(a.innerHTML);
+        alert(div.innerHTML);
+
+        a.innertext = "This is the same example text <p>foo,/p>";
+            //innerText is useful when you want to put a value on a web page.
+
+
+
+        let h2=currentsection.previousElementSibling.children[0];
+        //Get the div that contains the section that has an h2 with a class of highlight
+        let selcteditem = documnet.queryselector('li.selected');
+        //we can use these to traverse the DOM step by step.
+        //we can also access "sibling"
+        let first = selectedItem.previouselementsSibling;
+        let last = selectedItem.nextElementSibling;
+        let list = selecteditem.parentElement;
+        let header = selectedItem.parentElement.parentElement;
+        let section = selectedItem.parentElemnet.parentElement.nextElementsibling;
+        //If we style the page with javascript we actually are effectively setting
+        //an inline style.  Inline styles are always going to have priority
+        //over non-inline style.
+        //let listOfItems = document.querySelector('#traverseList').children;
+        //If you are using one of these. you are not going to put '#'
+            //document.querySelector('#traversList') you use #.
+           // .className
+        document.getElementByid
+        let innerDiv=document.getElementById("toplevel").children[0].children[0];
+        alert(innerdiv.innerHTML);
+        //How do we acccesss elements.
+        //Document.getElemntId to graphan element
+        let element = doocument.getElementById ('paragraphA');
+        //This will search inside just elemnt for a tag with the id 'name'.
+        let div = document.getElementByClassName('mydivtype');
+        let paragraph = documemt.getElenetByTagname('p');
+        //In JavaScript the 'getElementBy' calls
+        element.getElementById('name');
+        element.innerHTML = "<em>Hello</em>";
+        console.log(element);
+        //Every item in the web page in a node type object.
+        //Items that are tags specifically.
+        //IE-- say <p>stuff</p> are called elements...All elements are nodes.
+        //Array.from
+        let div = document.querySelector(".mydivtype");
+        div.innerHTML ="This is the divs that we are querying ";
+        //if you want a query to return all of the elemnets that match a CSS selector.
+        //UsequerySelectorAll.
+        let myparagraphs = document.querySelector("p");
+        alert(myparagraph.length);
+        //querySelectorAll, egtElementByClassname, getElementByTagName
+        //alll return what acts like an array of elememnts
+        //Specifically a lot of array methods like forEach, map, reduce, sort will not work.
+        //if you want to convert a nodelist to an array you can:
+        let arrayParagraph = array.from(paragraph);
+        //now arrayOfParagraph
+        alert(myParagraph.length)
+        for(let i= o; i<divs.length; ++i){
+            div[i].innerHTML=div[i].innerHTML + ":" +1;
+
+        }
+        
+        div[0].innerHTML ==="This is mydivtype div";
+        div[1].innerHTML === "This is another mydivtype div";
+    </script>
+    
+    </body>
+</html>
